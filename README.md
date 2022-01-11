@@ -23,12 +23,13 @@ Python 3.6.9 and other common packages listed in `requirements.txt`. **Do not in
 
 * ([model.py](mrcnn/model.py), [utils.py](mrcnn/utils.py), [config.py](mrcnn/config.py)): These files contain the main Mask RCNN implementation. 
 
-* ([train.py](train.py)): To train the model use this file. Use the same path for _dataset_train_ and _dataset_val_ in **train.py** as we are using 10% of images from training dataset for measuring validation loss. Change the path name of training dataset accordingly.
+* ([train.py](train.py)): To train the model use this file. Use the same path for _dataset_train_ and _dataset_val_ in **train.py** as we are using 10% of images from training dataset for measuring validation loss.
 
-* ([train_mask_rcnn_demo.py](demo/train_mask_rcnn_demo.py)) is used give no. of classes, batch size, steps_per_epoch, epochs, gpu_count, images_per_gpu. Change them as per your convinence wrt your GPU.  Change ROOT DIRECTORY in this file in _line 17_, epochs in ```train_head``` and ```train_all_layers``` functions in `line267`  and `line274` respectively.
+* ([train_mask_rcnn_demo.py](demo/train_mask_rcnn_demo.py)) is used give no. of classes, batch size, steps_per_epoch, epochs, gpu_count, images_per_gpu. Change them as per your convinence wrt your GPU.  You can change epochs in ```train_head``` and ```train_all_layers``` functions in `line267`  and `line274` respectively.
 
-For Downloading the dataset 
+* For Downloading the dataset 
+
 pip install gdown 
- gdown --fuzzy https://drive.google.com/file/d/1aGLstfgFbBMZih_OaBaiuB40ZI8DxLpK/view?usp=sharing
+ ```gdown --fuzzy https://drive.google.com/file/d/1aGLstfgFbBMZih_OaBaiuB40ZI8DxLpK/view?usp=sharing```
 
 
